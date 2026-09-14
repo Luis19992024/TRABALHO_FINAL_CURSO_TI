@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SAE-Web - Complemento da Avaliação</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <h1>SAE-Web</h1>
+    <nav>
+      <ul>
+        <li><a href="/Dashboard/dashboad.html">Início</a></li>
+        <li><a href="/Cadastro-paciente/novo-paciente.html">Novo Paciente</a></li>
+        <li><a href="/Avaliação-enfermagem/avaliação.html">Avaliação</a></li>
+        <li><a href="/Sinais-vitais/sinais-vitais.html">Sinais Vitais</a></li>
+       <!--  <li><a href="complemento.html" class="active">Complemento</a></li>-->
+        <li><a href="/Plano-cuidados/plano-cuidados.html">Plano de Cuidados</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="form-container">
+    <h2>Complemento da Avaliação</h2>
+    <form class="patient-form">
+      <label for="alimentacao">Alimentação</label>
+      <textarea id="alimentacao" name="alimentacao" rows="3" placeholder="Descreva hábitos alimentares, restrições, preferências..."></textarea>
+
+      <label for="sono">Sono</label>
+      <textarea id="sono" name="sono" rows="3" placeholder="Informe padrão de sono, dificuldades, qualidade..."></textarea>
+
+      <label for="eliminacoes">Eliminações</label>
+      <textarea id="eliminacoes" name="eliminacoes" rows="3" placeholder="Descreva hábitos urinários e intestinais..."></textarea>
+
+      <label for="atividade">Atividade física</label>
+      <textarea id="atividade" name="atividade" rows="3" placeholder="Informe nível de atividade física, limitações..."></textarea>
+
+      <label for="psicossocial">Aspectos psicossociais</label>
+      <textarea id="psicossocial" name="psicossocial" rows="3" placeholder="Descreva aspectos emocionais, sociais e familiares..."></textarea>
+
+      <button type="submit">Salvar Complemento</button>
+    </form>
+  </main>
+
+  <footer class="footer-text">
+    © 2026 Unidade Hospitalar
+  </footer>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SAE-Web - Plano de Cuidados</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <h1>SAE-Web</h1>
+    <nav>
+      <ul>
+        <li><a href="/Dashboard/dashboad.html">Início</a></li>
+        <li><a href="/Cadastro-paciente/novo-paciente.html">Novo Paciente</a></li>
+        <li><a href="/Avaliação-enfermagem/avaliação.html">Avaliação</a></li>
+        <li><a href="/Sinais-vitais/sinais-vitais.html">Sinais Vitais</a></li>
+        <li><a href="/Complemento-avaliacao/complemento.html">Complemento</a></li>
+        <li><a href="/Necessidades-identificadas/necessidades.html">Necessidades</a></li>
+     <!--    <li><a href="plano-cuidados.html" class="active">Plano de Cuidados</a></li> -->
+      </ul>
+    </nav>
+  </header>
+
+  <main class="form-container">
+    <h2>Plano de Cuidados</h2>
+    <form class="patient-form">
+      <label for="diagnostico">Diagnóstico de Enfermagem</label>
+      <textarea id="diagnostico" name="diagnostico" rows="3" placeholder="Informe diagnósticos de enfermagem identificados"></textarea>
+
+      <label for="objetivos">Objetivos</label>
+      <textarea id="objetivos" name="objetivos" rows="3" placeholder="Defina objetivos para o cuidado do paciente"></textarea>
+
+      <label for="intervencoes">Intervenções</label>
+      <textarea id="intervencoes" name="intervencoes" rows="4" placeholder="Liste intervenções de enfermagem planejadas"></textarea>
+
+      <label for="avaliacao_resultados">Avaliação de Resultados</label>
+      <textarea id="avaliacao_resultados" name="avaliacao_resultados" rows="3" placeholder="Descreva critérios de avaliação e resultados esperados"></textarea>
+
+      <button type="submit">Salvar Plano de Cuidados</button>
+    </form>
+  </main>
+
+  <footer class="footer-text">
+    © 2026 Unidade Hospitalar
+  </footer>
+</body>
+</html>

@@ -1,19 +1,24 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login SAE</title>
-     <link rel="stylesheet" href="/DesignGeral/design.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SAE-Web - Login</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>LOGIN</h1>
+  <div class="login-container">
+    <h1>SAE-Web</h1>
+    <form class="login-form">
+      <label for="usuario">Usuário</label>
+      <input type="text" id="usuario" name="usuario" placeholder="Digite seu usuário" required>
 
-    <input type="text" id="idnome" placeholder="COREN XXXXX-GO">
-    <input type="password" idSenha placeholder="DIGITE SUA SENHA">
+      <label for="senha">Senha</label>
+      <input type="password" id="senha" name="senha" placeholder="Digite sua senha" required>
 
-    <button>Acessar o Sistema</button>
-    <p>Primeiro acesso? Procure o <strong>Enfermeiro Supervisor ou ao setor de TI para criar seu usuário</strong></p>
-    
+      <button type="submit">Entrar</button>
+    </form>
+    <p class="footer-text">© 2026 Unidade Hospitalar</p>
+  </div>
 </body>
 </html>

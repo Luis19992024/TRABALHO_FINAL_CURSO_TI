@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SAE-Web - Necessidades Identificadas</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <h1>SAE-Web</h1>
+    <nav>
+      <ul>
+        <li><a href="/Dashboard/dashboad.html">Início</a></li>
+        <li><a href="/Cadastro-paciente/novo-paciente.html">Novo Paciente</a></li>
+        <li><a href="/Avaliação-enfermagem/avaliação.html">Avaliação</a></li>
+        <li><a href="/Sinais-vitais/sinais-vitais.html">Sinais Vitais</a></li>
+        <li><a href="/Complemento-avaliacao/complemento.html">Complemento</a></li>
+     <!--     <li><a href="necessidades.html" class="active">Necessidades</a></li>-->
+        <li><a href="/Plano-cuidados/plano-cuidados.html">Plano de Cuidados</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="form-container">
+    <h2>Necessidades Identificadas</h2>
+    <form class="patient-form">
+      <label for="necessidade_fisiologica">Necessidades fisiológicas</label>
+      <textarea id="necessidade_fisiologica" name="necessidade_fisiologica" rows="3" placeholder="Ex.: alimentação, hidratação, eliminação, sono..."></textarea>
+
+      <label for="necessidade_psicologica">Necessidades psicológicas</label>
+      <textarea id="necessidade_psicologica" name="necessidade_psicologica" rows="3" placeholder="Ex.: ansiedade, depressão, apoio emocional..."></textarea>
+
+      <label for="necessidade_social">Necessidades sociais</label>
+      <textarea id="necessidade_social" name="necessidade_social" rows="3" placeholder="Ex.: apoio familiar, integração social..."></textarea>
+
+      <label for="necessidade_espiritual">Necessidades espirituais</label>
+      <textarea id="necessidade_espiritual" name="necessidade_espiritual" rows="3" placeholder="Ex.: crenças, valores, práticas religiosas..."></textarea>
+
+      <button type="submit">Salvar Necessidades</button>
+    </form>
+  </main>
+
+  <footer class="footer-text">
+    © 2026 Unidade Hospitalar
+  </footer>
+</body>
+</html>

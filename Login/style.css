@@ -1,0 +1,84 @@
+/* Estilo global */
+body {
+  font-family: 'Roboto', sans-serif;
+  background: linear-gradient(135deg, #0077b6, #00b4d8);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Container do login */
+.login-container {
+  background: #ffffff;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  width: 100%;
+  max-width: 350px;
+  text-align: center;
+}
+
+/* Título */
+.login-container h1 {
+  margin-bottom: 1.5rem;
+  color: #0077b6;
+}
+
+/* Formulário */
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.login-form label {
+  text-align: left;
+  font-weight: bold;
+  color: #333;
+}
+
+.login-form input {
+  padding: 0.8rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+/* Botão */
+.login-form button {
+  padding: 0.8rem;
+  background: #0077b6;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.login-form button:hover {
+  background: #023e8a;
+}
+
+/* Rodapé */
+.footer-text {
+  margin-top: 1.5rem;
+  font-size: 0.8rem;
+  color: #555;
+}
+
+/* Responsividade */
+@media (max-width: 480px) {
+  .login-container {
+    padding: 1.5rem;
+    max-width: 90%;
+  }
+
+  .login-form input, 
+  .login-form button {
+    font-size: 0.9rem;
+  }
+}
