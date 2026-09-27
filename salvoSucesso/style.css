@@ -1,0 +1,22 @@
+/* Estilo global */
+body {
+  font-family: 'Roboto', sans-serif;
+  background: linear-gradient(135deg, #0077b6, #00b4d8);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Container do login */
+.login-container {
+  background: #ffffff;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  width: 100%;
+  max-width: 350px;
+  text-align: center;
+}
