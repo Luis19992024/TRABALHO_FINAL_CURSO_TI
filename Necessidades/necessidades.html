@@ -5,6 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>SAE-Web - Necessidades Identificadas</title>
   <link rel="stylesheet" href="style.css">
+  <script src="/Codigo-central/app.js" defer></script>
+
+
 </head>
 <body>
   <header class="topbar">
@@ -23,8 +26,17 @@
   </header>
 
   <main class="form-container">
+
+     <div class="patient-info">
+      <p><strong>Nome:</strong> <span id="nomePaciente"></span></p>
+      <p><strong>Idade:</strong> <span id="idadePaciente"></span></p>
+      <p><strong>Sexo:</strong> <span id="sexoPaciente"></span></p>
+      <p><strong>Gênero:</strong> <span id="generoPaciente"></span></p>
+    </div>
+
+
     <h2>Necessidades Identificadas</h2>
-    <form class="patient-form">
+    <form id="formNecessidades" class="patient-form">
       <label for="necessidade_fisiologica">Necessidades fisiológicas</label>
       <textarea id="necessidade_fisiologica" name="necessidade_fisiologica" rows="3" placeholder="Ex.: alimentação, hidratação, eliminação, sono..."></textarea>
 

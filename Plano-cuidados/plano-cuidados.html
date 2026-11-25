@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>SAE-Web - Plano de Cuidados</title>
   <link rel="stylesheet" href="style.css">
+   <script src="/Codigo-central/app.js" defer></script>
+
 </head>
 <body>
   <header class="topbar">
@@ -23,8 +25,17 @@
   </header>
 
   <main class="form-container">
+
+     <div class="patient-info">
+      <p><strong>Nome:</strong> <span id="nomePaciente"></span></p>
+      <p><strong>Idade:</strong> <span id="idadePaciente"></span></p>
+      <p><strong>Sexo:</strong> <span id="sexoPaciente"></span></p>
+      <p><strong>Gênero:</strong> <span id="generoPaciente"></span></p>
+    </div>
+
+
     <h2>Plano de Cuidados</h2>
-    <form class="patient-form">
+    <form id="formPlano" class="patient-form">
       <label for="diagnostico">Diagnóstico de Enfermagem</label>
       <textarea id="diagnostico" name="diagnostico" rows="3" placeholder="Informe diagnósticos de enfermagem identificados"></textarea>
 
@@ -43,6 +54,12 @@
 
   <footer class="footer-text">
     © 2026 Unidade Hospitalar
+<script src="/Codigo-central/app.js"></script>
+
+<script>
+  mostrarPacienteAtivo();
+</script>
+
   </footer>
 </body>
 </html>

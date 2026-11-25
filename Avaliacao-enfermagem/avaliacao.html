@@ -5,6 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>SAE-Web - Avaliação de Enfermagem</title>
   <link rel="stylesheet" href="style.css">
+  <script src="/Codigo-central/app.js" defer></script>
+
+
 </head>
 <body>
   <header class="topbar">
@@ -21,7 +24,18 @@
 
   <main class="form-container">
     <h2>Avaliação de Enfermagem</h2>
-    <form class="patient-form">
+
+    <div class="patient-info">
+  <p><strong>Nome:</strong> <span id="nomePaciente"></span></p>
+  <p><strong>Idade:</strong> <span id="idadePaciente"></span></p>
+  <p><strong>Sexo:</strong> <span id="sexoPaciente"></span></p>
+  <p><strong>Gênero:</strong> <span id="generoPaciente"></span></p>
+</div>
+
+
+    <form id="formAvaliacao" class="patient-form">
+
+
       <label for="queixa">Queixa principal</label>
       <textarea id="queixa" name="queixa" rows="3" placeholder="Descreva a queixa principal do paciente"></textarea>
 

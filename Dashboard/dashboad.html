@@ -13,7 +13,7 @@
       <ul>
         <li><a href="/Dashboard/dashboad.html" class="active">Início</a></li>
         <li><a href="/Cadastro-paciente/novo-paciente.html">Novo Paciente</a></li>
-        <li><a href="/Avaliação-enfermagem/avaliação.html">Avaliação</a></li>
+        <li><a href="/Avaliacao-enfermagem/avaliacao.html">Avaliação</a></li>
         <li><a href="/Plano-cuidados/plano-cuidados.html">Plano de Cuidados</a></li>
       </ul>
     </nav>
@@ -29,7 +29,7 @@
         <p>Cadastrar dados iniciais</p>
       </a>
 
-      <a href="/Avaliação-enfermagem/avaliação.html" class="card">
+      <a href="/Avaliacao-enfermagem/avaliacao.html" class="card">
         <h3>📝 Avaliação</h3>
         <p>Registrar avaliação de enfermagem</p>
       </a>
@@ -46,8 +46,32 @@
     </div>
   </main>
 
+ <main class="form-container">
+  <h2>Pacientes Ativos</h2>
+  <table border="1" width="100%">
+    <thead>
+      <tr>
+        <th>Nome</th>
+        <th>Idade</th>
+        <th>Sexo</th>
+        <th>Gênero</th>
+        <th>Status</th>
+        <th>Ações</th>
+
+        
+      </tr>
+    </thead>
+    <tbody id="tabelaPacientes"></tbody>
+  </table>
+</main>
+
+
+
   <footer class="footer-text">
     © 2026 Unidade Hospitalar
   </footer>
+
+<script src="/Codigo-central/app.js" defer></script>
+
 </body>
 </html>

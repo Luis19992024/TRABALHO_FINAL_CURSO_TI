@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SAE-Web - Revisão</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="/Codigo-central/app.js" defer></script>
+</head>
+<body>
+  <header class="topbar">
+    <h1>SAE-Web</h1>
+    <nav>
+      <ul>
+        <li><a href="/Dashboard/dashboad.html">Início</a></li>
+        <li><a href="/Cadastro-paciente/novo-paciente.html">Novo Paciente</a></li>
+        <li><a href="/Avaliacao-enfermagem/avaliacao.html">Avaliação</a></li>
+        <li><a href="/Sinais-vitais/sinais-vitais.html">Sinais Vitais</a></li>
+        <li><a href="/Complemento-avaliacao/complemento.html">Complemento</a></li>
+        <li><a href="/Necessidades-identificadas/necessidades.html">Necessidades</a></li>
+        <li><a href="/Plano-cuidados/plano-cuidados.html">Plano de Cuidados</a></li>
+        <li><a href="revisao.html" class="active">Revisão</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="form-container">
+    <h2>Revisão dos Dados</h2>
+    <p>Confira abaixo as informações registradas antes de salvar:</p>
+
+    <!-- Aqui o JS vai preencher os dados -->
+    <div id="dadosRevisao" class="review-box"></div>
+
+    <!-- Botões de ação -->
+    <form id="formRevisao" class="review-actions">
+      <button type="button" class="btn-secondary" onclick="history.back()">Voltar e Editar</button>
+      <button type="submit" class="btn-primary">Confirmar e Salvar</button>
+    </form>
+  </main>
+
+  <footer class="footer-text">
+    © 2026 Unidade Hospitalar
+  </footer>
+</body>
+</html>

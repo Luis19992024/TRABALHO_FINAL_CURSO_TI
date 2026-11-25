@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>SAE-Web - Complemento da Avaliação</title>
   <link rel="stylesheet" href="style.css">
+   <script src="/Codigo-central/app.js" defer></script>
+
 </head>
 <body>
   <header class="topbar">
@@ -22,8 +24,17 @@
   </header>
 
   <main class="form-container">
+
+      <div class="patient-info">
+      <p><strong>Nome:</strong> <span id="nomePaciente"></span></p>
+      <p><strong>Idade:</strong> <span id="idadePaciente"></span></p>
+      <p><strong>Sexo:</strong> <span id="sexoPaciente"></span></p>
+      <p><strong>Gênero:</strong> <span id="generoPaciente"></span></p>
+    </div>
+
+
     <h2>Complemento da Avaliação</h2>
-    <form class="patient-form">
+    <form id="formComplemento" class="patient-form">
       <label for="alimentacao">Alimentação</label>
       <textarea id="alimentacao" name="alimentacao" rows="3" placeholder="Descreva hábitos alimentares, restrições, preferências..."></textarea>
 
